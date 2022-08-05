@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Application</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="header">
+        <div class="full">
+            <div class="title">
+                <span>
+                    todo application
+                </span>
+            </div>
+            <div class="addBtn">
+                <button onclick="togglePopup()" class="first-button">Sign In</button>
+            </div>
+        </div>    
+       
+    </div>
+
+
+    <div class="content">
+
+           <div class="fullBody">
+            <div class="popup" id="popup-1">
+                <div class="content">
+                 <div class="close-btn" onclick="togglePopup()">
+                  ×</div>
+                  
+             <h1>Sign in</h1> 
+             <div id=" form">
+              <input type="text" id="name" placeholder="Name" name="name"><br><br>           
+              <input type="text" id="exp" placeholder="experiance" name="exp"><br><br>
+              <input type="text" id="regno" placeholder="register Number" name="regno"><br><br>
+              <button type="submit"  id="btn" onclick="submitForm()">Submit </button>
+              <input type="reset" value="reset">
+             </div>
+                   
+                  
+                </div>
+               </div>
+             
+               <div class="popupContainer">
+                  <button onclick="togglePopup()" class="mainBtn">Sign In</button>
+               </div>
+             
+              <div class="mainTable">
+                  <fieldset>
+                      <legend>
+                        <h2>Data From Local Storage</h2>  
+                      </legend>
+                    
+                      <table id="table">
+                          <tr>
+                              <td class="col">Name</td>           
+                              <td class="col">Experiance</td>
+                              <td class="col">Register No</td>
+                              <td class="col">Action</td>
+                          </tr>
+                         
+                      </table>
+                     </fieldset>
+              </div>
+           </div>
+        
+           
+            
+            
+     </div>
+
+        
+</body>
+</html>

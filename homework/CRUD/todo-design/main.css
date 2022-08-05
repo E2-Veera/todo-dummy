@@ -1,0 +1,142 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'cera';
+}
+@font-face {
+    font-family: 'cera';
+    src: url('Cera\ Pro\ Black.otf');
+}
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(139, 131, 131);
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+
+.content{
+    height: 90%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.full{
+   
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.fullBody{
+   
+    height: 100%;
+    width: 100%; 
+  
+}
+
+.popupContainer{
+    height: 10%;
+    width: 100%; 
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-content: center;
+}
+
+.mainTable{
+    height: 90%;
+    width: 100%; 
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-content: center;
+}
+.title{
+    height: 100%;
+    width: 80%; 
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-content: center;
+  
+}
+
+.addBtn{
+    height: 100%;
+    width: 20%; 
+}
+
+.mainContent{
+    height: 100%;
+    width: 100%;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%) scale(0);
+    width: 300px;
+    height: 450px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: #262626;
+    box-shadow:  38px 38px 56px #1e1e1e, 
+                -25px -25px 38px #1e1e1e;
+    z-index: 1;
+   }
+   
+   .popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 2px 5px 7px 5px;
+    background: #292929;
+    box-shadow:  5px 5px 15px #1e1e1e, 
+                -5px -5px 15px #1e1e1e;
+    }
+   
+   .popup.active .content {
+   transition: all 300ms ease-in-out;
+   transform: translate(-50%,-50%) scale(1);
+   }
+
+   .mainBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: #1c87c9;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    position: fixed;
+  }
+
+  td{
+    background-color: red;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  tr{
+    background-color: rgb(88, 86, 86);
+    padding: 10px;
+    font-weight: bold;
+  }
